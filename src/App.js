@@ -5,6 +5,10 @@ import Card from "./components/Card";
 // import images from "./images";
 
 class App extends Component {
+
+  // state = {
+  //   images
+  // };
   render() {
     return (
       <div class="container">
