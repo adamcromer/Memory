@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Nav from "./components/Nav";
 import Body from "./components/Body";
-import Card from "./components/Card";
+// import Card from "./components/Card";
 // import images from "./images";
 
 class App extends Component {
