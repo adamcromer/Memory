@@ -2,19 +2,25 @@ import React, { Component } from "react";
 import Nav from "./components/Nav";
 import Body from "./components/Body";
 import Card from "./components/Card";
-// import images from "./images";
+import images from "./images";
 
 class App extends Component {
 
-  // state = {
-  //   images
-  // };
+  state = {
+    images
+  };
+
   render() {
     return (
       <div class="container">
         <Nav />
         <Body>
-
+          {this.state.images.map(image => (
+            <Card
+              id={image.id}
+              url={image.url}
+            />
+          ))}
         </Body>
       </div>
     );
@@ -22,4 +28,3 @@ class App extends Component {
 }
 
 export default App;
-

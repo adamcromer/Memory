@@ -1,0 +1,7 @@
+.card {
+    border: 0.25vw solid black;
+}
+
+.card:hover {
+    border: 0.25vw solid white;
+}
