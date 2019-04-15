@@ -2,23 +2,24 @@ import React, { Component } from "react";
 import Nav from "./components/Nav";
 import Body from "./components/Body";
 import Card from "./components/Card";
-import images from "./images";
+import beetles from "./beetles.json";
 
 class App extends Component {
 
   state = {
-    images
+    beetles
   };
 
   render() {
     return (
-      <div class="container">
+      <div className="container">
         <Nav />
         <Body>
-          {this.state.images.map(image => (
+          {this.state.beetles.map(beetle => (
             <Card
-              id={image.id}
-              url={image.url}
+              id={beetle.id}
+              key={beetle.id}
+              url={beetle.url}
             />
           ))}
         </Body>
